@@ -1,0 +1,317 @@
+/* DIRTY Responsive pricing table CSS */
+
+/* 
+- make mobile switch sticky
+*/
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.template_faq {
+    background: #edf3fe none repeat scroll 0 0;
+}
+.panel-group {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 3px;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.04);
+    margin-bottom: 0;
+    padding: 30px;
+}
+#accordion .panel {
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 15px 10px;
+}
+#accordion .panel-heading {
+    border-radius: 30px;
+    padding: 0;
+}
+#accordion .panel-title a {
+    background:   #3964AE none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px 12px 50px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+#accordion .panel-title a.collapsed {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #333;
+}
+#accordion .panel-title a::after, #accordion .panel-title a.collapsed::after {
+    background: #3964AE none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+    color: #fff;
+    content: "";
+    font-family: fontawesome;
+    font-size: 25px;
+    height: 55px;
+    left: -20px;
+    line-height: 55px;
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    transition: all 0.3s ease 0s;
+    width: 55px;
+}
+#accordion .panel-title a.collapsed::after {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    color: #333;
+    content: "";
+}
+#accordion .panel-body {
+    background: transparent none repeat scroll 0 0;
+    border-top: medium none;
+    padding: 20px 25px 10px 9px;
+    position: relative;
+}
+#accordion .panel-body p {
+    border-left: 1px dashed #8c8c8c;
+    padding-left: 25px;
+}
+
+$muted: #6c757d;
+
+body {
+  margin: 2rem 0rem;
+  
+  label {
+    color: $muted;
+    display: block;
+    margin-top: 2rem;
+  }
+}
+
+* {
+ 
+}
+body { 
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size:14px;
+  padding:14px;
+}
+article {
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  height:1000px;
+  position:relative;
+}
+ul {
+  display:flex;
+  top:0px;
+  z-index:10;
+  padding-bottom:14px;
+}
+li {
+  list-style:none;
+  flex:1;
+}
+li:last-child {
+  border-right:1px solid #DDD;
+}
+button {
+  width:100%;
+  border: 1px solid #DDD;
+  border-right:0;
+  border-top:0;
+  padding: 10px;
+  background:#FFF;
+  font-size:14px;
+  font-weight:bold;
+  height:60px;
+  color:#999
+}
+li.active button {
+  background:#F5F5F5;
+  color:#000;
+}
+table { background-color:#eee; border-collapse:collapse; table-layout:fixed; width:110%; margin-left:-70px;  }
+th { background:#3964ae; display:none;  }
+td, th {
+  height:53px
+  margin-left:-70px;
+  
+}
+td,th { border:1px solid white; padding:10px; empty-cells:show; }
+td,th {
+  text-align:left;
+}
+td+td, th+th {
+  text-align:center;
+  display:none;
+}
+td.default {
+  display:table-cell;
+}
+.bg-purple {
+  border-top:0px solid #A32362;
+  color:white;
+}
+.bg-blue {
+  border-top:0px solid #0097CF;
+  color:white;
+}
+
+.bg-orange {
+
+
+  border-top:0px solid #0097CF;
+  color:white;
+  border-left:0px;
+
+}
+.sep {
+  background:grey;
+  color:white;
+ 
+}
+.txt-l { font-size:28px; font-weight:bold; }
+.txt-top { position:relative; top:-9px; left:-2px; }
+.tick { font-size:18px; color:#2CA01C; }
+.hide {
+  border:0;
+  color: #3964ae;
+  width:250px;
+}
+
+@media (min-width: 640px) {
+  ul {
+    display:none;
+  }
+  td,th {
+    display:table-cell !important;
+  }
+  td,th {
+    width: 330px;
+  
+  }
+  td+td, th+th {
+    width: 150px;
+  }
+}
+.footer{
+  background-color:black;
+  width:1420px;
+  height:200px;
+  margin-top:1400px;
+  margin-bottom:-30px;
+  margin-left:-15px;
+  margin-right:-20px;
+
+  
+}
+
+.accordion {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.accordion__title {
+  font-family: 'industry', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.125em;
+}
+.accordion__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.accordion__item {
+  border-bottom: 1px solid #000;
+  visibility: hidden;
+}
+.accordion__item:last-child {
+  border-bottom: 0;
+}
+.accordion__item.is-active .accordion__itemTitleWrap::after {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+.accordion__item.is-active .accordion__itemIconWrap {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.accordion__itemTitleWrap {
+  display: flex;
+  height: 2.5em;
+  align-items: center;
+  padding: 0 1em;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.accordion__itemTitleWrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: #3bade3;
+  background: linear-gradient(45deg, #3bade3 0%, #576fe6 25%, #9844b7 51%, #ff357f 100%);
+  z-index: 1;
+  transition: -webkit-transform .4s ease;
+  transition: transform .4s ease;
+  transition: transform .4s ease, -webkit-transform .4s ease;
+}
+.accordion__itemTitleWrap.is-active::after, .accordion__itemTitleWrap:hover::after {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+.accordion__itemIconWrap {
+  width: 1.25em;
+  height: 1.25em;
+  margin-left: auto;
+  position: relative;
+  z-index: 10;
+}
+.accordion__itemTitle {
+  margin: 0;
+  font-family: 'industry', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  position: relative;
+  z-index: 10;
+}
+.accordion__itemContent {
+  font-size: 0.875em;
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 0 1.25em;
+}
+.accordion__itemContent p {
+  margin: 2em 0;
+}
